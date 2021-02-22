@@ -1,0 +1,3 @@
+name:stellabella
+genre:shootinggame
+plateform:android
