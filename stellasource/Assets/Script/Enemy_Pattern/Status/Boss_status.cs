@@ -40,7 +40,7 @@ public class Boss_status : MonoBehaviour
         if (boss_hp <= 0)
         {
             
-             Player_status.PS_score+=50000;
+             Player_status.PS_score+=100000;
 
             ScoreManager_Finish.bossdead = true;
             Destroy(gameObject);

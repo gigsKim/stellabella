@@ -214,6 +214,7 @@
     <Compile Include="Assets\Script\Stage\StagePublic\PauseBtn.cs" />
     <Compile Include="Assets\Script\Stage\StagePublic\PauseToGarageBtn.cs" />
     <Compile Include="Assets\Script\Stage\StagePublic\ResumeBtn.cs" />
+    <Compile Include="Assets\Script\Stage\StagePublic\showdiff.cs" />
     <Compile Include="Assets\Script\Stage\StagePublic\ShowHP.cs" />
     <Compile Include="Assets\Script\Stage\StagePublic\Stage_misson.cs" />
     <Compile Include="Assets\Script\Stage\StagePublic\ToGarageBtn.cs" />

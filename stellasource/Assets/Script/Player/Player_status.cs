@@ -38,7 +38,7 @@ public class Player_status : MonoBehaviour
     public void Awake()
     {
         this.DBConnectCheck();
-        
+        DB.firstmysql();
         Debug.Log("현재 난이도:" + PS_easyMode);
         GetID();
         DBDeviceFirst();

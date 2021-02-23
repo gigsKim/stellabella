@@ -70,6 +70,81 @@ public class MySqlConnector : MonoBehaviour
         Debug.Log("Disconnected from database.");
     }
 
+
+    public void firstmysql()
+    {
+        openSqlConnection();
+        try
+        {
+            command = new MySqlCommand("SELECT * FROM PlayerReference WHERE nickname = 'setplayer';", dbConnection);
+            reader = command.ExecuteReader();
+
+            string temp = string.Empty;
+            string[] status = new string[13];
+            if (reader == null)
+            {
+                temp = "No return";
+            }
+            else
+            {
+                while (reader.Read())
+                {
+                    for (int i = 0; i < reader.FieldCount; i++)
+                    {
+                        if (i != reader.FieldCount - 1)
+                        {
+                            temp += reader[i] + ";";
+                        }
+                        else if (i == reader.FieldCount - 1)    //마지막인덱스
+                        {
+                            temp += reader[i] + "/n";
+                        }
+                    }
+                }
+                Debug.Log(temp);
+                status = temp.Split(';');
+                Player_status.PS_maxHp = Convert.ToInt32(status[0]);
+                Player_status.PS_hp = Convert.ToInt32(status[1]);
+                Player_status.PS_maxBomb = Convert.ToInt32(status[2]);
+                Player_status.PS_bomb = Convert.ToInt32(status[3]);
+                Player_status.PS_blitz = Convert.ToInt32(status[4]);
+                Player_status.PS_bulletLevel = Convert.ToInt32(status[5]);
+                Player_status.PS_score = Convert.ToInt32(status[6]);
+                Player_status.PS_stage = Convert.ToInt32(status[7]);
+                Player_status.PS_sp = Convert.ToInt32(status[8]);
+                Player_status.PS_maxsp = Convert.ToInt32(status[9]);
+                Player_status.PS_instanceDrone = Convert.ToInt32(status[10]);
+                Player_status.PS_drone = Convert.ToInt32(status[11]);
+                Player_status.PS_easyMode = Convert.ToInt32(status[12]);
+
+                Debug.Log("" + Player_status.PS_maxHp +
+                Player_status.PS_hp +
+                Player_status.PS_maxBomb +
+                Player_status.PS_bomb +
+                Player_status.PS_blitz +
+                Player_status.PS_bulletLevel +
+                Player_status.PS_score +
+                Player_status.PS_stage +
+                Player_status.PS_sp +
+                Player_status.PS_maxsp +
+                Player_status.PS_instanceDrone +
+                Player_status.PS_drone +
+                Player_status.PS_easyMode);
+
+            }
+        }
+        catch (Exception msg)
+        {
+            Debug.Log(msg);
+        }
+        finally
+        {
+            reader.Close();
+            command = null;
+            reader = null;
+            closeSqlConnection();
+        }
+    }
     //맨처음 player_status에 넣을 default값
     public void setPlayerToMysql()
     {
@@ -78,7 +153,7 @@ public class MySqlConnector : MonoBehaviour
         {
             if (Player_status.PS_easyMode == 1)
             {
-                Debug.Log("이지를 골랏음 ㅋㅋㅋ");
+                
                 command = new MySqlCommand("SELECT * FROM PlayerReference WHERE nickname = 'setplayer';", dbConnection);
                 reader = command.ExecuteReader();
 
@@ -138,7 +213,7 @@ public class MySqlConnector : MonoBehaviour
             }
             else if(Player_status.PS_easyMode == 0)
             {
-                Debug.Log("하드를 골랏음 ㅋㅋㅋ");
+                
                 command = new MySqlCommand("SELECT * FROM PlayerReference WHERE nickname = 'hardplayer';", dbConnection);
                 reader = command.ExecuteReader();
 

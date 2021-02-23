@@ -17,7 +17,7 @@ public class ScoreManager_Finish : MonoBehaviour
     public bool ismissionon= true;
     public bool missionclear = false;
     public int missionscore = 0;
-
+    public bool lastscore = true;
 
 
     private double score;
@@ -30,6 +30,21 @@ public class ScoreManager_Finish : MonoBehaviour
         
 
     }
+
+    private void setsocre()
+    {
+        if(lastscore == true)
+        {
+
+
+            score -= (invCount * 3000);
+            score -= (bombCount * 15000);
+            score += missionscore;
+            lastscore = false;
+            
+        }
+
+    }
     private void Update()
     {
         invCount = blitzInvincible.blitz_used_count;
@@ -40,6 +55,7 @@ public class ScoreManager_Finish : MonoBehaviour
             scoreManager_Finish.transform.GetChild(0).gameObject.SetActive(true);
             scoreManager_Finish.transform.GetChild(1).gameObject.SetActive(true);
             finishScreen = false;
+            Debug.Log("1번째 점수 :" + score);
         }
         if (bossdead)
         {
@@ -49,6 +65,7 @@ public class ScoreManager_Finish : MonoBehaviour
             finishScreenTimer += Time.deltaTime;
             if (finishScreenTimer > 1.0f)
             {
+               
                 scoreManager_Finish.transform.GetChild(0).transform.GetChild(0).gameObject.SetActive(true);
                 scoreManager_Finish.transform.GetChild(0).transform.GetChild(1).gameObject.SetActive(true);
                 if (invCount < 10)
@@ -63,6 +80,7 @@ public class ScoreManager_Finish : MonoBehaviour
             }
             if (finishScreenTimer > 2.0f)
             {
+                
                 scoreManager_Finish.transform.GetChild(0).transform.GetChild(2).gameObject.SetActive(true);
                 scoreManager_Finish.transform.GetChild(0).transform.GetChild(3).gameObject.SetActive(true);
                 scoreManager_Finish.transform.GetChild(0).transform.GetChild(3).GetComponent<Text>().text = "X     " + bombCount + ":     -" + (bombCount * 15000);
@@ -75,6 +93,7 @@ public class ScoreManager_Finish : MonoBehaviour
             {
                 if (finishScreenTimer > 2.5f)
                 {
+                    
                     scoreManager_Finish.transform.GetChild(0).transform.GetChild(4).gameObject.SetActive(true);
                     scoreManager_Finish.transform.GetChild(0).transform.GetChild(5).gameObject.SetActive(true);
 
@@ -82,7 +101,7 @@ public class ScoreManager_Finish : MonoBehaviour
                     {
                         scoreManager_Finish.transform.GetChild(0).transform.GetChild(4).GetComponent<Text>().text = "Mission clear";
                         scoreManager_Finish.transform.GetChild(0).transform.GetChild(5).GetComponent<Text>().text = "+" + missionscore;
-                        score += missionscore;
+                        
 
                     }
 
@@ -101,6 +120,7 @@ public class ScoreManager_Finish : MonoBehaviour
 
             if(finishScreenTimer > 3.0f)
             {
+                
                 scoreManager_Finish.transform.GetChild(0).transform.GetChild(6).gameObject.SetActive(true);
                 scoreManager_Finish.transform.GetChild(0).transform.GetChild(7).gameObject.SetActive(true);
 
@@ -111,7 +131,7 @@ public class ScoreManager_Finish : MonoBehaviour
                 }
                 if (Player_status.PS_easyMode == 0)
                 {
-                    scoreManager_Finish.transform.GetChild(0).transform.GetChild(7).GetComponent<Text>().text = "Hard     *    2.0";
+                    scoreManager_Finish.transform.GetChild(0).transform.GetChild(7).GetComponent<Text>().text = "Hard     *    1.2";
 
                 }
 
@@ -121,22 +141,26 @@ public class ScoreManager_Finish : MonoBehaviour
 
             if (finishScreenTimer > 3.5f)
             {
-                score -= (invCount * 3000);
-                score -= (bombCount * 15000);
+                Debug.Log("6번째 점수 :" + score);
+                setsocre();
                 if(Player_status.PS_easyMode == 1)
                 {
+                    Debug.Log("곱하고 난 뒤의 점수 :" + score);
                     Player_status.PS_score = (int)score;
                     
 
                 }
                 if (Player_status.PS_easyMode == 0)
                 {
-                    
+
                     score = score * 1.2;
+                    Debug.Log("곱하고 난 뒤의 점수 :" + score);
                     Player_status.PS_score = (int)score;
                     
 
                 }
+                Debug.Log("최종 정산 후의 점수 :" + score);
+
 
                 scoreManager_Finish.transform.GetChild(2).gameObject.SetActive(true);
                 scoreManager_Finish.transform.GetChild(3).gameObject.SetActive(true);
