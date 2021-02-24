@@ -17,17 +17,17 @@ public class Enemy_missle_st3 : MonoBehaviour
     bool bullet_fire = true;
     bool bullet_fire2 = true;
     bool bullet_fire3 = true;
-    bool checkUpdate = false;
+    
 
     void OnEnable()
     {
-        checkUpdate = true;
+       
 
     }
 
     void OnDisable()
     {
-        checkUpdate = false;
+        
         this.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
         time = 0;
     }

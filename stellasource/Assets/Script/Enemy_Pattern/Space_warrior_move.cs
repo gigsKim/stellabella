@@ -9,8 +9,8 @@ public class Space_warrior_move : MonoBehaviour
     public float maxtime = 2.2f;
     public float backtime = 6.0f;
     public float moveint = -300;
-    bool back = false;
-    bool go = false;
+    
+    
 
   
 
@@ -28,8 +28,8 @@ public class Space_warrior_move : MonoBehaviour
     void OnDisable()
     {
 
-        back = false;
-        go = false;
+        
+        
         this.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
         time = 0;
 

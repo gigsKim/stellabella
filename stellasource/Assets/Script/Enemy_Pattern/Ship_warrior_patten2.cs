@@ -25,23 +25,23 @@ public class Ship_warrior_patten2 : MonoBehaviour
     bool bullet_fire5 = true;
     bool bullet_fire6 = true;
     bool bullet_fire7 = true;
-    bool bullet_fire8 = true;
+   
 
 
 
 
 
-    bool checkUpdate = false;
+  
 
     void OnEnable()
     {
         this.GetComponent<Rigidbody2D>().AddForce(new Vector3(-300, 0, 0));
-        checkUpdate = true;
+        
     }
 
     void OnDisable()
     {
-        checkUpdate = false;
+        
         this.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
         time = 0;
 

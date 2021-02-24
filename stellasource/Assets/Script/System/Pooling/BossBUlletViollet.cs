@@ -8,11 +8,11 @@ public class BossBUlletViollet : MonoBehaviour
     private static GameObject[] bossbulletsviollet;
     private static int index;
     private static int counter = 0;
-    private static Transform transform;
+    
     private void Start()
     {
         counter = 0;
-        transform = this.gameObject.transform;
+       
         index = this.gameObject.transform.childCount;
         bossbulletsviollet = new GameObject[index];
         for (int i = 0; i < index; i++)
@@ -39,7 +39,7 @@ public class BossBUlletViollet : MonoBehaviour
     }
     public static void RetireBullet(GameObject gameObject)
     {
-        gameObject.transform.parent = transform;
+        
         gameObject.SetActive(false);
     }
 }

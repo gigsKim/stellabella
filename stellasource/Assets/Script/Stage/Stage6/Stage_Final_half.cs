@@ -14,7 +14,7 @@ public class Stage_Final_half : MonoBehaviour
     //생성용 스크립트 달아주기
     public Enemy_Spawn_DM create;
 
-    int plus = 10;
+    
     int cs;
     //보스한번만 생성하게 하기위한 bool
     bool boss_check = false;

@@ -8,7 +8,7 @@ public class UFO_vertical_move : MonoBehaviour
 
    public bool checkUpdate = false;
    public bool move = false;
-    bool firecheck = false;
+    
 
 
     void OnDisable()
@@ -17,7 +17,7 @@ public class UFO_vertical_move : MonoBehaviour
         move = false;
         this.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
         time = 0;
-        firecheck = false;
+        
 
 
     }

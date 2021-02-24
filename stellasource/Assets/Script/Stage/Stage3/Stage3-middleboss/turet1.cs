@@ -18,7 +18,7 @@ public class turet1 : MonoBehaviour
     bool co_check = true;
 
 
-    int num = 0;
+    
     float firsttime = 0;
     float checktime = 0;
     int check = 0;

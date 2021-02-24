@@ -15,7 +15,7 @@ public class Attackballsc : MonoBehaviour
     public bool pattenend = false;
     public GameObject bullet;
     bool updown = false;
-    float movetime = 0;
+   
 
 
     private void OnDisable()
@@ -23,7 +23,7 @@ public class Attackballsc : MonoBehaviour
         min = true;
         pattenend = false;
         updown = false;
-        movetime = 0;
+        
     }
 
 

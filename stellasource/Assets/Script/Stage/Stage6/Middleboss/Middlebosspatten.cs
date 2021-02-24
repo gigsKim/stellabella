@@ -9,13 +9,13 @@ public class Middlebosspatten : MonoBehaviour
 
     public Gotonext_1 go_st5;
 
-    bool co_check = true;
+  
 
 
-    int num = 0;
+  
     float firsttime = 0;
-    float checktime = 0;
-    int check = 0;
+    
+    
     int Randomattack = 0;
     bool pattencheck = false;
     bool gotopatten = false;
@@ -137,7 +137,7 @@ public class Middlebosspatten : MonoBehaviour
 
         yield return new WaitForSeconds(0.5f);
         pattencheck = false;
-        Debug.Log("패턴종료");
+        
         yield return null;
     }
 
@@ -205,7 +205,7 @@ public class Middlebosspatten : MonoBehaviour
                     case 0:
                         {
                             StartCoroutine("patten1");
-                            Debug.Log("패턴시작");
+                            
                             gotopatten = false;
                             
                         }
@@ -214,7 +214,7 @@ public class Middlebosspatten : MonoBehaviour
                     case 1:
                         {
                             StartCoroutine("patten2");
-                            Debug.Log("패턴시작2");
+                            
                             gotopatten = false;
                            
                         }

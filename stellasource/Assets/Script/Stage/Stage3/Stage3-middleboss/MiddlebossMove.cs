@@ -10,10 +10,10 @@ public class MiddlebossMove : MonoBehaviour
 
 
     int oneShoting;
-    bool co_check = true;
+   
   
     
-    int num = 0;
+    
 
    public bool ismoveon = true;
     public bool isbreak = true;

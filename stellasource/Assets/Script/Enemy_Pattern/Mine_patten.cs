@@ -5,7 +5,7 @@ using UnityEngine;
 public class Mine_patten : MonoBehaviour
 {
 
-    float time = 0;
+    
 
     void OnEnable()
     {
@@ -17,7 +17,7 @@ public class Mine_patten : MonoBehaviour
 
      
         this.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
-        time = 0;
+       
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

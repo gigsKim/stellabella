@@ -13,7 +13,7 @@ public class Mine_status : MonoBehaviour
     public int life = 1;
     public int damage = 1;
     int score = 0;
-    bool minedead = false;
+    
     public GameObject bullet;
     public GameObject bullet2;
     public GameObject bullet3;
@@ -106,7 +106,7 @@ public class Mine_status : MonoBehaviour
             transform.parent = vehicle.transform;
             gameObject.SetActive(false);
             life = 1;
-            minedead = false;
+            
            
 
         }

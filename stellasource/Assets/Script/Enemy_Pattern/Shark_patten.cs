@@ -29,7 +29,7 @@ public class Shark_patten : MonoBehaviour
     bool bullet_fire3 = true;
     bool bullet_fire4 = true;
     bool bullet_fire5 = true;
-    bool bullet_fire6 = true;
+ 
 
 
     bool shottingmode = false;
@@ -58,7 +58,7 @@ public class Shark_patten : MonoBehaviour
         bullet_fire3 = true;
         bullet_fire4 = true;
         bullet_fire5 = true;
-        bullet_fire6 = true;
+        
         moveon = false;
         shottingmode = false;
         firstmove = false;

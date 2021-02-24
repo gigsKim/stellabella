@@ -9,12 +9,12 @@ public class BossStepBullet : MonoBehaviour
     private static GameObject[] bossbulletsstep;
     private static int index;
     private static int counter = 0;
-    private static Transform transform;
+    
     public bool bossdead = false;
     private void Start()
     {
         counter = 0;
-        transform = this.gameObject.transform;
+        
         index = this.gameObject.transform.childCount;
         bossbulletsstep = new GameObject[index];
         for (int i = 0; i < index; i++)
@@ -40,7 +40,7 @@ public class BossStepBullet : MonoBehaviour
     }
     public static void RetireBullet(GameObject gameObject)
     {
-        gameObject.transform.parent = transform;
+        
         gameObject.SetActive(false);
     }
 }

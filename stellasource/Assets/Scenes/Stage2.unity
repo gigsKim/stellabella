@@ -383,6 +383,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1281113526388472563, guid: ab2a3e1b1e205ab4d9ab15ae439592e5,
+        type: 3}
+      propertyPath: ismissionon
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4067502049559828929, guid: ab2a3e1b1e205ab4d9ab15ae439592e5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5728350003728618582, guid: ab2a3e1b1e205ab4d9ab15ae439592e5,
         type: 3}
       propertyPath: m_Name
@@ -589,11 +599,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_FontData.m_Alignment
       value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1281113526388472563, guid: ab2a3e1b1e205ab4d9ab15ae439592e5,
-        type: 3}
-      propertyPath: ismissionon
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7643532905449196167, guid: ab2a3e1b1e205ab4d9ab15ae439592e5,
         type: 3}

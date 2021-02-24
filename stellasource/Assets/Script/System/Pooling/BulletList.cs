@@ -95,7 +95,7 @@ namespace BulletList
             public Node(T data, Node nextNode)
             {
                 this.data = data;
-                this.next = next;
+                
             }
         }
     }

@@ -262,31 +262,31 @@
     <None Include="Assets\Font\deluxefont\license.txt" />
     <None Include="Assets\Asset_Store\Unity_Free_8bit_snd\readme.txt" />
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>C:/Users/givom/Desktop/test24/stellasource/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>C:/Users/givom/Desktop/test24/stellabella/stellasource/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>C:/Users/givom/Desktop/test24/stellasource/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>C:/Users/givom/Desktop/test24/stellabella/stellasource/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/givom/Desktop/test24/stellasource/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/givom/Desktop/test24/stellabella/stellasource/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>C:/Users/givom/Desktop/test24/stellasource/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>C:/Users/givom/Desktop/test24/stellabella/stellasource/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>C:/Users/givom/Desktop/test24/stellasource/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>C:/Users/givom/Desktop/test24/stellabella/stellasource/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>C:/Users/givom/Desktop/test24/stellasource/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>C:/Users/givom/Desktop/test24/stellabella/stellasource/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>C:/Users/givom/Desktop/test24/stellasource/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>C:/Users/givom/Desktop/test24/stellabella/stellasource/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/givom/Desktop/test24/stellasource/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/givom/Desktop/test24/stellabella/stellasource/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>C:/Users/givom/Desktop/test24/stellasource/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>C:/Users/givom/Desktop/test24/stellabella/stellasource/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>D:/2019.2.2f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -460,16 +460,16 @@
       <HintPath>D:/2019.2.2f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
     </Reference>
     <Reference Include="BouncyCastle.Crypto">
-      <HintPath>C:/Users/givom/Desktop/test24/stellasource/Assets/Plugins/BouncyCastle.Crypto.dll</HintPath>
+      <HintPath>C:/Users/givom/Desktop/test24/stellabella/stellasource/Assets/Plugins/BouncyCastle.Crypto.dll</HintPath>
     </Reference>
     <Reference Include="Google.Protobuf">
-      <HintPath>C:/Users/givom/Desktop/test24/stellasource/Assets/Plugins/Google.Protobuf.dll</HintPath>
+      <HintPath>C:/Users/givom/Desktop/test24/stellabella/stellasource/Assets/Plugins/Google.Protobuf.dll</HintPath>
     </Reference>
     <Reference Include="MySql.Data">
-      <HintPath>C:/Users/givom/Desktop/test24/stellasource/Assets/Plugins/MySql.Data.dll</HintPath>
+      <HintPath>C:/Users/givom/Desktop/test24/stellabella/stellasource/Assets/Plugins/MySql.Data.dll</HintPath>
     </Reference>
     <Reference Include="Renci.SshNet">
-      <HintPath>C:/Users/givom/Desktop/test24/stellasource/Assets/Plugins/Renci.SshNet.dll</HintPath>
+      <HintPath>C:/Users/givom/Desktop/test24/stellabella/stellasource/Assets/Plugins/Renci.SshNet.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>D:/2019.2.2f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
