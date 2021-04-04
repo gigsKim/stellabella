@@ -282,7 +282,7 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 1800, y: 1200}
+  m_ReferenceResolution: {x: 2000, y: 1200}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -586,11 +586,6 @@ PrefabInstance:
       propertyPath: m_FontData.m_Alignment
       value: 4
       objectReference: {fileID: 0}
-    - target: {fileID: 1281113526388472563, guid: ab2a3e1b1e205ab4d9ab15ae439592e5,
-        type: 3}
-      propertyPath: ismissionon
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7643532905449196167, guid: ab2a3e1b1e205ab4d9ab15ae439592e5,
         type: 3}
       propertyPath: m_RootOrder
@@ -600,6 +595,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RootOrder
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1281113526388472563, guid: ab2a3e1b1e205ab4d9ab15ae439592e5,
+        type: 3}
+      propertyPath: ismissionon
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5728350003163024438, guid: ab2a3e1b1e205ab4d9ab15ae439592e5,
         type: 3}
@@ -3257,11 +3257,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 3065515892948257334, guid: 8b43c7cf52a65e94694642d0fb54c141,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2996605366658476224, guid: 8b43c7cf52a65e94694642d0fb54c141,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3341,6 +3336,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Size.x
       value: 26.395927
+      objectReference: {fileID: 0}
+    - target: {fileID: 3065515892948257334, guid: 8b43c7cf52a65e94694642d0fb54c141,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8b43c7cf52a65e94694642d0fb54c141, type: 3}

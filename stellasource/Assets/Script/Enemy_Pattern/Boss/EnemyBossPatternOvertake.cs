@@ -13,6 +13,8 @@ public class EnemyBossPatternOvertake : MonoBehaviour
     int fireTerm = 0;
     float b2bTerm = 1f;
     bool temp = true;
+    GameObject pamp;
+    public GameObject bullet;
     private void Start()
     {
         player = playerO.transform.position;
@@ -51,11 +53,10 @@ public class EnemyBossPatternOvertake : MonoBehaviour
                 for (int i = 0; i < 7; i++)
                 {
 
-                    /*BossBullet.GetBossBullet(bp[i]).GetComponent<Rigidbody2D>().AddForce(new Vector2(-1, ((i + 1) * 0.15f) - (b2bTerm / 10f)) * ((b2bTerm + 2) * 30));*/
+                    BossBullet.GetBossBullet(bp[i]).GetComponent<Rigidbody2D>().AddForce(new Vector2(-1, ((i + 1) * 0.15f) - (b2bTerm / 10f)) * ((b2bTerm + 2) * 30));
 
-                    /*BossBullet.GetBossBullet(bp[i]).GetComponent<Rigidbody2D>().AddForce(new Vector2(-1 + role, ((i)-role)*((b2bTerm/10f)-role)) * (b2bTerm + 2) * 50);*/
-
-                    BossBullet.GetBossBullet(bp[i]).GetComponent<Rigidbody2D>().AddForce(new Vector2(-1 + role, ((i - 3 + role + Mathf.Acos(b2bTerm / 10f)) / 3f) * 0.5f +(player.y*0.1f)/2) * (b2bTerm + 3) * 25);
+                    /*BossBullet.GetBossBullet(bp[i]).GetComponent<Rigidbody2D>().AddForce(new Vector2(-1 + role, ((i)-role)*((b2bTerm/10f)-role)) * (b2bTerm + 2) * 50);
+                    /*BossBullet.GetBossBullet(bp[i]).GetComponent<Rigidbody2D>().AddForce(new Vector2(-1 + role, ((i - 3 + role + Mathf.Acos(b2bTerm / 10f)) / 3f) * 0.5f + (player.y * 0.1f) / 2) * (b2bTerm + 3) * 25);
 
                     /*BossBullet.GetBossBullet(bp[i]).GetComponent<Rigidbody2D>().AddForce(new Vector2(-1 + role, Mathf.Sin(player/100f) + (i+role) * 0.1f ) * (b2bTerm + 3) * 20);*/
 

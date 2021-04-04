@@ -43,7 +43,8 @@ public class Enemy_normal_status : MonoBehaviour
 
         if (life <= 0)
         {
-            Player_status.PS_score += score;
+            Player_status.combo += 1;
+            Player_status.PS_score += score + (Player_status.combo * 200);
             ExplosionManager.GetExplosion(this.gameObject);
             transform.parent = vehicle.transform;
             gameObject.SetActive(false);

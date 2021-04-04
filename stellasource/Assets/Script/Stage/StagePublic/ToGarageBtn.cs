@@ -16,11 +16,13 @@ public class ToGarageBtn : MonoBehaviour
         
         if (Player_status.PS_stage < 7)
         {
+            Player_status.combo = 0;
             LoadingSceneManager.LoadScene("Garage");
            
         }
         else if(Player_status.PS_stage  == 7)
         {
+            Player_status.combo = 0;
             SceneManager.LoadScene("LoadingScene2");
         }
     }

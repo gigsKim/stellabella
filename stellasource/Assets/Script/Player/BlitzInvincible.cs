@@ -32,7 +32,7 @@ public class BlitzInvincible : MonoBehaviour
         if (collision.tag == "MainCamera" || collision.tag == "Bullet_Player" || collision.tag == "Boom" || collision.tag == "WallForPattern") { }
         else
         {
-
+            Player_status.combo = 0;
             if (invincible_check == false)//무적 상태가 아닐시
             {
 

@@ -10,7 +10,7 @@ public class EnemyBossPatternRightCircle : MonoBehaviour
     public int bulletSpeed = 100;
     //총알 간격
     public int bulletTerm = 10;
-
+    public GameObject bullet;
     float Right = 0;
     GameObject temp;
     float time;

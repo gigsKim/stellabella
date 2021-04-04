@@ -303,7 +303,7 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 1800, y: 1200}
+  m_ReferenceResolution: {x: 2000, y: 1200}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -383,16 +383,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1281113526388472563, guid: ab2a3e1b1e205ab4d9ab15ae439592e5,
-        type: 3}
-      propertyPath: ismissionon
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4067502049559828929, guid: ab2a3e1b1e205ab4d9ab15ae439592e5,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5728350003728618582, guid: ab2a3e1b1e205ab4d9ab15ae439592e5,
         type: 3}
       propertyPath: m_Name
@@ -609,6 +599,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RootOrder
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1281113526388472563, guid: ab2a3e1b1e205ab4d9ab15ae439592e5,
+        type: 3}
+      propertyPath: ismissionon
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4067502049559828929, guid: ab2a3e1b1e205ab4d9ab15ae439592e5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab2a3e1b1e205ab4d9ab15ae439592e5, type: 3}
@@ -3966,6 +3966,12 @@ PrefabInstance:
       propertyPath: playerO
       value: 
       objectReference: {fileID: 141736655}
+    - target: {fileID: 3115689513433714061, guid: 5de8d8abf7300b04e8a6c717040659f2,
+        type: 3}
+      propertyPath: bullet
+      value: 
+      objectReference: {fileID: 7386340981737192555, guid: 3d9db410714155449b06983f0d2c9612,
+        type: 3}
     - target: {fileID: 3115689513012496847, guid: 5de8d8abf7300b04e8a6c717040659f2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4001,6 +4007,18 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3115689513117167399, guid: 5de8d8abf7300b04e8a6c717040659f2,
+        type: 3}
+      propertyPath: bullet
+      value: 
+      objectReference: {fileID: 7386340981737192555, guid: 3d9db410714155449b06983f0d2c9612,
+        type: 3}
+    - target: {fileID: 3115689514079971880, guid: 5de8d8abf7300b04e8a6c717040659f2,
+        type: 3}
+      propertyPath: bullet
+      value: 
+      objectReference: {fileID: 7386340981737192555, guid: 3d9db410714155449b06983f0d2c9612,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5de8d8abf7300b04e8a6c717040659f2, type: 3}
 --- !u!1001 &3464242564783415149

@@ -25,7 +25,7 @@ public class EnemyBigBullet : MonoBehaviour
         {
             if (!bounceCheck)
             {
-                Debug.Log("닿음?");
+                
                 this.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
                 this.GetComponent<Rigidbody2D>().AddForce(new Vector2(-this.transform.position.x + player.position.x, -this.transform.position.y + player.position.y) * bulletSpeed);
                 bounceCheck = true;

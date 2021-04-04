@@ -22,6 +22,7 @@ public class Player_status : MonoBehaviour
     public static int PS_instanceDrone;
     public static int PS_drone;
     public static int PS_easyMode;
+    public static int combo = 0;
     public static string PS_name;
 
     //DB에서 사용안함
@@ -115,7 +116,7 @@ public class Player_status : MonoBehaviour
     //기기id 기반으로 데이터슬롯받고 PlayerReference id 기반으로 내용 로드
     public static string[] DBLoadPlayerSlotDB(int id)
     {
-        
+
         return DB.LoadPlayerSlotDB(id);
     }
 
@@ -151,7 +152,7 @@ public class Player_status : MonoBehaviour
             + ", " + PS_easyMode
             + ", '" + PS_name + "');";
     }
-    
+
     //업데이트 쿼리문
     public static string toUpdate()
     {
@@ -170,7 +171,7 @@ public class Player_status : MonoBehaviour
             ", instanceDrone = " + PS_instanceDrone +
             ", drone = " + PS_drone +
             ", easymode = " + PS_easyMode +
-            " WHERE nickname = '"+ PS_name + "';";
+            " WHERE nickname = '" + PS_name + "';";
     }
 
     //기기정보 받아오기

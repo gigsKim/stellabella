@@ -1,0 +1,2 @@
+C:\Users\givom\Desktop\test24\stellasource\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+C:\Users\givom\Desktop\test24\stellasource\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache

@@ -74,8 +74,6 @@ public class Enemy_Spawn_DM : MonoBehaviour
         else
         {
             Vehicle.GetVehicle((enemyType * enemyMaximum) - enemySelect).transform.parent = waypoint[wayPointer].transform;
-            Debug.Log(wayPointer+"웨이포인터,"+enemyType +"타입,"+enemyType*enemyMaximum+"타입*맥시멈(시작값),"+ ((enemyType * enemyMaximum) - enemySelect) + "실제인덱스");
-          
             Vehicle.GetVehicle((enemyType * enemyMaximum) - enemySelect).SetActive(true);
             Vehicle.GetVehicle((enemyType * enemyMaximum) - enemySelect).transform.localPosition = Vector3.zero;
             Vehicle.GetVehicle((enemyType * enemyMaximum) - enemySelect).transform.parent = null;

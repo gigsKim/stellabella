@@ -183,7 +183,7 @@ public class Player_charge : MonoBehaviour, IPointerDownHandler, IPointerUpHandl
 
                 yield return new WaitForSeconds(0.2f);
 
-                Debug.Log("차지중");
+                
 
                 if (ischarge == false)
                 {
@@ -199,7 +199,7 @@ public class Player_charge : MonoBehaviour, IPointerDownHandler, IPointerUpHandl
 
             if (chargerontime >= 15)
             {
-                Debug.Log("차지완료");
+                
                 ischarge = false;
                 ischargeon = true;
 

@@ -8,7 +8,7 @@ public class EndingScroll : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        Player_status.combo = 0;
     }
 
     private void Update()

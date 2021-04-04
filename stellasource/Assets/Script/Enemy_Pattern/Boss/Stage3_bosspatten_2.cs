@@ -58,7 +58,7 @@ public class Stage3_bosspatten_2 : MonoBehaviour
                 this.transform.rotation = Quaternion.Euler(0, 180, 0);
                 this.transform.Rotate(1, -0.4f, bulletposition);
 
-                bullet = BossBullet.GetBossBullet(this.gameObject);
+                bullet = Instantiate(bullet, new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y), Quaternion.identity);
                 bullet.transform.rotation = this.transform.rotation;
                 bullet.GetComponent<Rigidbody2D>().AddForce(new Vector2(bullet.transform.right.x, bullet.transform.right.y) * 250);
                 //bullet.GetComponent<Rigidbody2D>().AddForce(new Vector2(bullet.transform.right.x, bullet.transform.right.y) * -200);

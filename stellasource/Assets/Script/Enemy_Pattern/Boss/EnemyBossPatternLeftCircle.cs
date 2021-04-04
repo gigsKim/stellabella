@@ -13,6 +13,7 @@ public class EnemyBossPatternLeftCircle : MonoBehaviour
     
     float leftz = 0;
     GameObject temp;
+    public GameObject bullet;
     float time;
     void FixedUpdate()
     {
@@ -25,7 +26,7 @@ public class EnemyBossPatternLeftCircle : MonoBehaviour
 
             this.transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
             this.transform.Rotate(0, 0, leftz);
-
+            
             temp = BossBullet.GetBossBullet(this.gameObject);
             temp.transform.rotation = this.transform.rotation;
             temp.GetComponent<Rigidbody2D>().AddForce(new Vector2(temp.transform.right.x, temp.transform.right.y) * bulletSpeed);

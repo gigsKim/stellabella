@@ -36,7 +36,7 @@ public class ScoreManager_Finish : MonoBehaviour
         if(lastscore == true)
         {
 
-
+            
             score -= (invCount * 3000);
             score -= (bombCount * 15000);
             score += missionscore;
@@ -55,7 +55,7 @@ public class ScoreManager_Finish : MonoBehaviour
             scoreManager_Finish.transform.GetChild(0).gameObject.SetActive(true);
             scoreManager_Finish.transform.GetChild(1).gameObject.SetActive(true);
             finishScreen = false;
-            Debug.Log("1번째 점수 :" + score);
+           
         }
         if (bossdead)
         {
@@ -141,11 +141,11 @@ public class ScoreManager_Finish : MonoBehaviour
 
             if (finishScreenTimer > 3.5f)
             {
-                Debug.Log("6번째 점수 :" + score);
+                
                 setsocre();
                 if(Player_status.PS_easyMode == 1)
                 {
-                    Debug.Log("곱하고 난 뒤의 점수 :" + score);
+                    
                     Player_status.PS_score = (int)score;
                     
 
@@ -154,12 +154,12 @@ public class ScoreManager_Finish : MonoBehaviour
                 {
 
                     score = score * 1.2;
-                    Debug.Log("곱하고 난 뒤의 점수 :" + score);
+                    
                     Player_status.PS_score = (int)score;
                     
 
                 }
-                Debug.Log("최종 정산 후의 점수 :" + score);
+                
 
 
                 scoreManager_Finish.transform.GetChild(2).gameObject.SetActive(true);

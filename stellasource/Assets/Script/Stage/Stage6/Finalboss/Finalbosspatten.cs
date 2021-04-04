@@ -66,14 +66,12 @@ public class Finalbosspatten : MonoBehaviour
             this.transform.rotation = Quaternion.Euler(0, 0, 0);
             this.transform.Rotate(0,-180, bulletposition);
 
-                /*bullet = BossBullet.GetBossBullet(this.gameObject);
-                bullet.transform.rotation = this.transform.rotation;
-                bullet.GetComponent<Rigidbody2D>().AddForce(new Vector2(2, bullet.transform.right.y) * -250);*/
+            bullet = BossBullet.GetBossBullet(this.gameObject);
+            bullet.transform.rotation = this.transform.rotation;
+            bullet.GetComponent<Rigidbody2D>().AddForce(new Vector2(2, bullet.transform.right.y) * -250);
 
 
-            bullet2 = BossBullet.GetBossBullet(this.gameObject);
-            bullet2.transform.rotation = this.transform.rotation;
-            bullet2.GetComponent<Rigidbody2D>().AddForce(new Vector2( (bossbullet2/2) /bossbullet, bullet2.transform.right.y) * -350);
+
             //bullet.GetComponent<Rigidbody2D>().AddForce(new Vector2(bullet.transform.right.x, bullet.transform.right.y) * -200);
 
 

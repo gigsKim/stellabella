@@ -10,6 +10,7 @@ public class Finalbosspatten3 : MonoBehaviour
     int twoShoting = 50;
     float time = 0;
     bool first = true;
+    public GameObject bullet;
     IEnumerator SpellStart_2()
     {
         float angle = 360 / twoShoting;

@@ -12,6 +12,8 @@ public class Finalbosspatten2 : MonoBehaviour
     //총알 간격
     public int bulletTerm = 10;
 
+
+    public GameObject bullet;
     float Right = 0;
     GameObject temp;
     float time;

@@ -710,7 +710,7 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 1800, y: 1200}
+  m_ReferenceResolution: {x: 2000, y: 1200}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -7794,6 +7794,24 @@ PrefabInstance:
       propertyPath: returnlife
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 7326210033061953963, guid: 13318577ebfe98d4fba8488a2c551516,
+        type: 3}
+      propertyPath: bullet
+      value: 
+      objectReference: {fileID: 4134395201303258086, guid: dae0d54f99d0b1542875639e0f185b52,
+        type: 3}
+    - target: {fileID: 7326210033061953960, guid: 13318577ebfe98d4fba8488a2c551516,
+        type: 3}
+      propertyPath: bullet
+      value: 
+      objectReference: {fileID: 4134395201303258086, guid: dae0d54f99d0b1542875639e0f185b52,
+        type: 3}
+    - target: {fileID: 7326210033061953961, guid: 13318577ebfe98d4fba8488a2c551516,
+        type: 3}
+      propertyPath: bullet
+      value: 
+      objectReference: {fileID: 4134395201303258086, guid: dae0d54f99d0b1542875639e0f185b52,
+        type: 3}
     m_RemovedComponents:
     - {fileID: 7463388740858211390, guid: 13318577ebfe98d4fba8488a2c551516, type: 3}
     - {fileID: 3124989442495702562, guid: 13318577ebfe98d4fba8488a2c551516, type: 3}

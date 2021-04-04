@@ -18,7 +18,14 @@ public class turet1 : MonoBehaviour
     bool co_check = true;
 
 
-    
+    public GameObject bullet;
+
+    GameObject pamp;
+    GameObject temp;
+    GameObject somp;
+
+
+
     float firsttime = 0;
     float checktime = 0;
     int check = 0;
@@ -95,9 +102,15 @@ public class turet1 : MonoBehaviour
 
 
 
-                        BossBullet.GetBossBullet(tt1).GetComponent<Rigidbody2D>().AddForce(bullet_speed * new Vector3(-3, 0.5f, 0));
-                        BossBullet.GetBossBullet(tt2).GetComponent<Rigidbody2D>().AddForce(bullet_speed * new Vector3(-3, 0, 0));
-                        BossBullet.GetBossBullet(tt3).GetComponent<Rigidbody2D>().AddForce(bullet_speed * new Vector3(-3, -0.5f, 0));
+
+
+
+                        pamp = Instantiate(bullet, new Vector3(tt1.gameObject.transform.position.x, tt1.gameObject.transform.position.y), Quaternion.identity);
+                        temp = Instantiate(bullet, new Vector3(tt2.gameObject.transform.position.x, tt2.gameObject.transform.position.y), Quaternion.identity);
+                        somp = Instantiate(bullet, new Vector3(tt3.gameObject.transform.position.x, tt3.gameObject.transform.position.y), Quaternion.identity);
+                       pamp.GetComponent<Rigidbody2D>().AddForce(bullet_speed * new Vector3(-3, 0.5f, 0));
+                       temp.GetComponent<Rigidbody2D>().AddForce(bullet_speed * new Vector3(-3, 0, 0));
+                       somp.GetComponent<Rigidbody2D>().AddForce(bullet_speed * new Vector3(-3, -0.5f, 0));
 
 
 
@@ -119,7 +132,11 @@ public class turet1 : MonoBehaviour
 
 
 
-                        BossBullet.GetBossBullet(tt1).GetComponent<Rigidbody2D>().AddForce(bullet_speed * new Vector3(-3, 0.5f, 0));
+
+
+                        pamp = Instantiate(bullet, new Vector3(tt1.gameObject.transform.position.x, tt1.gameObject.transform.position.y), Quaternion.identity);
+                        pamp.GetComponent<Rigidbody2D>().AddForce(bullet_speed * new Vector3(-3, 0.5f, 0));
+                       
                         //BossBullet.GetBossBullet(tt2).GetComponent<Rigidbody2D>().AddForce(bullet_speed * new Vector3(-3, 0, 0));
                         // BossBullet.GetBossBullet(tt3).GetComponent<Rigidbody2D>().AddForce(bullet_speed * new Vector3(-3, -0.5f, 0));
 
@@ -142,9 +159,10 @@ public class turet1 : MonoBehaviour
 
 
 
-                        BossBullet.GetBossBullet(tt1).GetComponent<Rigidbody2D>().AddForce(bullet_speed * new Vector3(-3, 0.5f, 0));
-                        // BossBullet.GetBossBullet(tt2).GetComponent<Rigidbody2D>().AddForce(bullet_speed * new Vector3(-3, 0, 0));
-                        BossBullet.GetBossBullet(tt3).GetComponent<Rigidbody2D>().AddForce(bullet_speed * new Vector3(-3, -0.5f, 0));
+                        temp = Instantiate(bullet, new Vector3(tt1.gameObject.transform.position.x, tt1.gameObject.transform.position.y), Quaternion.identity);
+                        somp = Instantiate(bullet, new Vector3(tt3.gameObject.transform.position.x, tt3.gameObject.transform.position.y), Quaternion.identity);
+                        pamp.GetComponent<Rigidbody2D>().AddForce(bullet_speed * new Vector3(-3, 0.5f, 0));
+                        somp.GetComponent<Rigidbody2D>().AddForce(bullet_speed * new Vector3(-3, -0.5f, 0));
 
 
 

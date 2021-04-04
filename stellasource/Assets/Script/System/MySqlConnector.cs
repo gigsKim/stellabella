@@ -42,10 +42,10 @@ public class MySqlConnector : MonoBehaviour
     // Connect to database 사용후 무조건 닫아주기!
     public void openSqlConnection()
     {
-        string sqlDBip = "mygame.cb4gltf9hyii.ap-northeast-2.rds.amazonaws.com";
-        string sqlDBname = "stellabella";
-        string sqlDBid = "master";
-        string sqlDBpw = "66rjqofk";
+        string sqlDBip = "118.67.134.106";
+        string sqlDBname = "sys";
+        string sqlDBid = "root";
+        string sqlDBpw = "!@66Rjqofk";
         string sqlDatabase = "Server=" + sqlDBip + ";Database=" + sqlDBname + ";UserId=" + sqlDBid + ";Password=" + sqlDBpw + ";";
 
         try
@@ -153,7 +153,7 @@ public class MySqlConnector : MonoBehaviour
         {
             if (Player_status.PS_easyMode == 1)
             {
-                
+
                 command = new MySqlCommand("SELECT * FROM PlayerReference WHERE nickname = 'setplayer';", dbConnection);
                 reader = command.ExecuteReader();
 
@@ -211,9 +211,9 @@ public class MySqlConnector : MonoBehaviour
 
                 }
             }
-            else if(Player_status.PS_easyMode == 0)
+            else if (Player_status.PS_easyMode == 0)
             {
-                
+
                 command = new MySqlCommand("SELECT * FROM PlayerReference WHERE nickname = 'hardplayer';", dbConnection);
                 reader = command.ExecuteReader();
 
@@ -272,7 +272,7 @@ public class MySqlConnector : MonoBehaviour
                 }
 
             }
-               
+
         }
         catch (Exception msg)
         {
@@ -298,11 +298,11 @@ public class MySqlConnector : MonoBehaviour
             //기기정보 컬럼의 slot 조회
             command = new MySqlCommand("SELECT slot" + slotIndex + " FROM deviceid WHERE deviceid='" + Player_status.PS_deviceID + "';", dbConnection);
             reader = command.ExecuteReader();
-            
+
 
             while (reader.Read())
             {
-                Debug.Log(reader[0]+"끼에에에엥에에에엑"+ Player_status.PS_ID);
+                Debug.Log(reader[0] + "끼에에에엥에에에엑" + Player_status.PS_ID);
             }
 
             //비어있는 슬롯 선택시 선택한 슬롯에 update id
@@ -777,7 +777,7 @@ public class MySqlConnector : MonoBehaviour
         {
             command = new MySqlCommand("UPDATE deviceid " +
                 "SET " +
-                "slot1 = CASE slot1 WHEN "+ Player_status.PS_ID + " THEN 0 ELSE slot1 END," +
+                "slot1 = CASE slot1 WHEN " + Player_status.PS_ID + " THEN 0 ELSE slot1 END," +
                 "slot2 = CASE slot2 WHEN " + Player_status.PS_ID + " THEN 0 ELSE slot2 END," +
                 "slot3 = CASE slot3 WHEN " + Player_status.PS_ID + " THEN 0 ELSE slot3 END " +
                 "WHERE deviceid = '" + Player_status.PS_deviceID +
@@ -785,7 +785,7 @@ public class MySqlConnector : MonoBehaviour
             command.ExecuteNonQuery();
             command = null;
 
-            command = new MySqlCommand("delete from PlayerReference where id ="+Player_status.PS_ID+";", dbConnection);
+            command = new MySqlCommand("delete from PlayerReference where id =" + Player_status.PS_ID + ";", dbConnection);
             int hang = command.ExecuteNonQuery();
             Debug.Log("DeletePlayer() - 성공, 아이디 제거 영향을 받은 행 수 = " + hang);
         }
@@ -806,7 +806,7 @@ public class MySqlConnector : MonoBehaviour
         openSqlConnection();
         try
         {
-            command = new MySqlCommand("insert into ScoreBoard(nickname,score) values('"+Player_status.PS_name+"', "+Player_status.PS_score+"); ; ", dbConnection);
+            command = new MySqlCommand("insert into ScoreBoard(nickname,score) values('" + Player_status.PS_name + "', " + Player_status.PS_score + "); ; ", dbConnection);
             command.ExecuteNonQuery();
             Debug.Log("InsertScore() - 성공");
         }
@@ -855,7 +855,7 @@ public class MySqlConnector : MonoBehaviour
                 Debug.Log("ReadScore() - 성공" + temp);
                 return temp;
             }
-            
+
         }
         catch (Exception msg)
         {
