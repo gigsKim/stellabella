@@ -1,2 +1,2 @@
 version 1.4
-update : combosystem,stroy,new database
+update : combosystem,stroy1~2,new database
