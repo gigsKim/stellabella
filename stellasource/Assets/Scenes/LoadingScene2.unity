@@ -598,8 +598,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -1788}
-  m_SizeDelta: {x: 3600, y: 2200}
+  m_AnchoredPosition: {x: 0, y: -1729.9999}
+  m_SizeDelta: {x: 3600, y: 2316}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &179135598
 MonoBehaviour:
@@ -634,8 +634,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uB098\uB294 \uC8FD\uC74C\uC774\uC624 \uC138\uACC4\uC758 \uD30C\uAD34\uC790\uAC00
-    \uB418\uC5C8\uB3C4\uB2E4"
+  m_Text: "\uC0C8\uB85C \uAC1C\uBC1C\uB41C \uBE14\uB9AC\uCE20\uB77C\uB294 \uBB34\uD55C\uD55C
+    \uC5D0\uB108\uC9C0 \uB355\uBD84\uC5D0\n\uACFC\uD559\uAE30\uC220\uC740 \uD06C\uAC8C
+    \uBC1C\uC804\uD588\uC73C\uB098\n\uC774\uB97C \uC545\uC6A9\uD558\uB294 \uC138\uB825
+    '\uC774\uD074\uB9BD\uC2A4'\uAC00 \uB4F1\uC7A5\uD558\uC600\uB2E4"
 --- !u!222 &179135599
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3336,8 +3338,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -1788}
-  m_SizeDelta: {x: 3600, y: 2200}
+  m_AnchoredPosition: {x: 0, y: -1730.0001}
+  m_SizeDelta: {x: 3600, y: 2316}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1384464026
 MonoBehaviour:
@@ -3372,8 +3374,12 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uC54C\uC544 \uCC28\uB9B0 \uC74C\uBAA8\uB97C \uC800\uC9C0\uD558\uAE30 \uC704\uD574
-    \uC545\uC758 \uC870\uC9C1\uC774 \uC228\uC5B4\uC788\uB294 \uB3C4\uC2DC\uC5D0 \uB4E4\uC5B4\uAC00\uC790."
+  m_Text: "\uC774\uB4E4\uC740 \uC6B0\uC8FC\uC5D0 \uC704\uC131\uC744 \uB744\uC5B4 \uC138\uACC4\uB97C
+    \uC9C0\uBC30\uD558\uB824 \uD558\uC600\uB2E4.\n\uC9C0\uAE08 \uC774\uB4E4\uC774
+    \uC704\uC131\uC744 \uB744\uC6B8\uB824\uACE0 \uD55C\uB2E4\uB294 \uCCA9\uBCF4\uB97C
+    \uC785\uC218\uD588\uB2E4.\n\uC774\uB4E4\uC758  \uC74C\uBAA8\uB97C \uC800\uC9C0\uD558\uAE30
+    \uC704\uD574 \uC774\uD074\uB9BD\uC2A4\uAC00 \uC228\uC5B4\uC788\uB294 \uB3C4\uC2DC\uC5D0
+    \uB4E4\uC5B4\uAC00\uC790."
 --- !u!222 &1384464027
 CanvasRenderer:
   m_ObjectHideFlags: 0

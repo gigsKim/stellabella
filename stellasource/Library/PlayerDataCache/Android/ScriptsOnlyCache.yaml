@@ -1495,7 +1495,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11780}
     - Class: 114
-      Script: {instanceID: 72962}
+      Script: {instanceID: 59330}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -2017,7 +2017,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11778}
     - Class: 114
-      Script: {instanceID: 72962}
+      Script: {instanceID: 59330}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -2196,7 +2196,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11778}
     - Class: 114
-      Script: {instanceID: 72962}
+      Script: {instanceID: 59330}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -3827,4 +3827,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Stage6_2.unity
   - Assets/Scenes/GameOver.unity
   - Assets/Scenes/Stage7.unity
-  playerPath: C:/Users/givom/Desktop/test24/stellasource/StellaBella_ver1.2.apk
+  playerPath: C:/Users/givom/Desktop/test24/stellasource/StellaBella_ver1.4.apk
