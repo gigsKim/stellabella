@@ -13,7 +13,7 @@ public class Rador : MonoBehaviour
 
 
     public GameObject bbullet;
-    public GameObject attack;
+   
 
     bool first = true;
     float time = 0; 
@@ -99,10 +99,10 @@ public class Rador : MonoBehaviour
             {
 
 
-                attack = Instantiate(bullet, new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y), Quaternion.identity);
+                bullet = BossBullet.GetBossBullet(this.gameObject);
 
                 //보스의 위치에 bullet을 생성합니다.
-                attack.GetComponent<Rigidbody2D>().AddForce(new Vector2(speed * Mathf.Cos(Mathf.PI * 2 * i / oneShoting), speed * Mathf.Sin(Mathf.PI * i * 2 / oneShoting)));
+                bullet.GetComponent<Rigidbody2D>().AddForce(new Vector2(speed * Mathf.Cos(Mathf.PI * 2 * i / oneShoting), speed * Mathf.Sin(Mathf.PI * i * 2 / oneShoting)));
 
 
                 bullet.transform.Rotate(new Vector3(0f, 0f, 360 * i / oneShoting - 90));
@@ -128,13 +128,13 @@ public class Rador : MonoBehaviour
             {
 
 
-                attack = Instantiate(bullet, new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y), Quaternion.identity);
+                bullet = BossBullet.GetBossBullet(this.gameObject);
+
+                //보스의 위치에 bullet을 생성합니다.
+                bullet.GetComponent<Rigidbody2D>().AddForce(new Vector2(speed * Mathf.Cos(Mathf.PI * 2 * i / oneShoting), speed * Mathf.Sin(Mathf.PI * i * 2 / oneShoting)));
 
 
-                attack.GetComponent<Rigidbody2D>().AddForce(new Vector2(speed * Mathf.Cos(Mathf.PI * 2 * i / twoShoting), speed * Mathf.Sin(Mathf.PI * i * 2 / twoShoting)));
-
-
-                bullet2.transform.Rotate(new Vector3(0f, 0f, 180 * i / twoShoting - 90));
+                bullet.transform.Rotate(new Vector3(0f, 0f, 360 * i / oneShoting - 90));
             }
 
 

@@ -193,7 +193,6 @@ ScriptsOnlyBuild:
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
-    - UnityEditor.TestTools.TestRunner.TestListCacheData
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
@@ -1495,7 +1494,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11780}
     - Class: 114
-      Script: {instanceID: 59330}
+      Script: {instanceID: 53600}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -2017,7 +2016,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11778}
     - Class: 114
-      Script: {instanceID: 59330}
+      Script: {instanceID: 53600}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -2196,7 +2195,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11778}
     - Class: 114
-      Script: {instanceID: 59330}
+      Script: {instanceID: 53600}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -2966,7 +2965,7 @@ ScriptsOnlyBuild:
     className: RemoteTestResultSender
   - hash:
       serializedVersion: 2
-      Hash: 45604d3e2e3632fb7420a0fd5b9cedf2
+      Hash: b0c7d62097946ce900e282bceb717015
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Rador
@@ -3827,4 +3826,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Stage6_2.unity
   - Assets/Scenes/GameOver.unity
   - Assets/Scenes/Stage7.unity
-  playerPath: C:/Users/givom/Desktop/test24/stellasource/StellaBella_ver1.4.apk
+  playerPath: C:/Users/givom/Desktop/test24/stellasource/StellaBella_ver1.4.1.apk

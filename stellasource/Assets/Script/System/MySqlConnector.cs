@@ -746,10 +746,16 @@ public class MySqlConnector : MonoBehaviour
                     }
                 }
                 Debug.Log("LoadPlayerSlotDB(id) - 성공" + temp);
+                
+
                 status = temp.Split(';');
+                Debug.Log(temp);
                 forSlot[0] = Convert.ToString(status[13]);
                 forSlot[1] = Convert.ToInt32(status[7]) + "";
                 forSlot[2] = Convert.ToInt32(status[6]) + "";
+
+
+                
             }
 
             return forSlot;

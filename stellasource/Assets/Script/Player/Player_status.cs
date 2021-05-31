@@ -116,7 +116,7 @@ public class Player_status : MonoBehaviour
     //기기id 기반으로 데이터슬롯받고 PlayerReference id 기반으로 내용 로드
     public static string[] DBLoadPlayerSlotDB(int id)
     {
-
+        
         return DB.LoadPlayerSlotDB(id);
     }
 
