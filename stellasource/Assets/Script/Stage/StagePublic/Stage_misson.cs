@@ -55,6 +55,7 @@ public class Stage_misson : MonoBehaviour
         missionname1 = missionobj1.gameObject.name;
         missionname2 = missionobj2.gameObject.name;
         missionname3 = missionobj3.gameObject.name;
+        //미션을 보여줄 이미지와 텍스트를 선택
         icon = GameObject.Find("Missionimage");
         percentTxt = GameObject.Find("MissionText");
       
@@ -68,15 +69,18 @@ public class Stage_misson : MonoBehaviour
 
         if(randommisson == 0)
         {
-
+            //미션에서 선택된 적의 이미지 보여줌
             icon.GetComponent<Image>().sprite = objectimg1;
+            //미션에서 잡아야 하는 적의 개수와 지금 적의 개수
             max = object1max;
             min = object1count;
            
-
+            //현재 미션의 퍼센트를 표시함.
             percent = (float)min / (float)max * 100;
             percentTxt.GetComponent<Text>().text = percent.ToString("N2") + "%";
 
+
+            //만약 정해진 개수만큼의 적을 물리친다면 미션 클리어
             if (min >= max)
             {
                 
@@ -95,14 +99,17 @@ public class Stage_misson : MonoBehaviour
         
         if(randommisson == 1)
         {
+            //미션에서 선택된 적의 이미지를 보여줌
             icon.GetComponent<Image>().sprite = objectimg2;
+            //미션에서 잡아야 하는 적의 개수와 지금 적의 개수
             max = object2max;
             min = object2count;
-           
 
+            //현재 미션의 퍼센트를 표시함.
             percent = (float)min / (float)max * 100;
             percentTxt.GetComponent<Text>().text = percent.ToString("N2") + "%";
 
+            //만약 정해진 개수만큼의 적을 물리친다면 미션 클리어
             if (min >= max)
             {
 
@@ -123,14 +130,17 @@ public class Stage_misson : MonoBehaviour
 
         if(randommisson ==2 )
         {
-
+            //미션에서 선택된 적의 이미지를 보여줌
             icon.GetComponent<Image>().sprite = objectimg3;
+            //미션에서 잡아야 하는 적의 개수와 지금 적의 개수
             max = object3max;
             min = object3count;
-            
+
+            //현재 미션의 퍼센트를 표시함.
             percent = (float)min / (float)max * 100;
             percentTxt.GetComponent<Text>().text = percent.ToString("N2")+"%";
 
+            //만약 정해진 개수만큼의 적을 물리친다면 미션 클리어
             if (min >= max)
             {
 

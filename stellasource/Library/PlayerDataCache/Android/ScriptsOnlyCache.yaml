@@ -193,6 +193,7 @@ ScriptsOnlyBuild:
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
+    - UnityEditor.TestTools.TestRunner.TestListCacheData
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
@@ -1494,7 +1495,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11780}
     - Class: 114
-      Script: {instanceID: 53600}
+      Script: {instanceID: 66574}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -2016,7 +2017,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11778}
     - Class: 114
-      Script: {instanceID: 53600}
+      Script: {instanceID: 66574}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -2195,7 +2196,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11778}
     - Class: 114
-      Script: {instanceID: 53600}
+      Script: {instanceID: 66574}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -3826,4 +3827,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Stage6_2.unity
   - Assets/Scenes/GameOver.unity
   - Assets/Scenes/Stage7.unity
-  playerPath: C:/Users/givom/Desktop/test24/stellasource/StellaBella_ver1.4.1.apk
+  playerPath: C:/Users/givom/Desktop/test24/StellaBella_ver1.4.1.apk
