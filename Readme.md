@@ -1,5 +1,5 @@
 Stellbella
 =======================================
-GameVersion : 1.4.1  
+GameVersion : 1.4.2  
 
 
