@@ -145,7 +145,7 @@ public class Stage_3_pt1_mager : MonoBehaviour
                 bullet = BossBullet.GetBossBullet(this.gameObject);
                 bullet.transform.rotation = this.transform.rotation;
                 bullet.GetComponent<Rigidbody2D>().AddForce(new Vector2(-bullet.transform.right.x, bullet.transform.right.y) * -250);
-                //bullet.GetComponent<Rigidbody2D>().AddForce(new Vector2(bullet.transform.right.x, bullet.transform.right.y) * -200);
+                
 
 
 

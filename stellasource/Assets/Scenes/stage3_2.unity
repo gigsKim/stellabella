@@ -7798,20 +7798,17 @@ PrefabInstance:
         type: 3}
       propertyPath: bullet
       value: 
-      objectReference: {fileID: 4134395201303258086, guid: dae0d54f99d0b1542875639e0f185b52,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 7326210033061953960, guid: 13318577ebfe98d4fba8488a2c551516,
         type: 3}
       propertyPath: bullet
       value: 
-      objectReference: {fileID: 4134395201303258086, guid: dae0d54f99d0b1542875639e0f185b52,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 7326210033061953961, guid: 13318577ebfe98d4fba8488a2c551516,
         type: 3}
       propertyPath: bullet
       value: 
-      objectReference: {fileID: 4134395201303258086, guid: dae0d54f99d0b1542875639e0f185b52,
-        type: 3}
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7463388740858211390, guid: 13318577ebfe98d4fba8488a2c551516, type: 3}
     - {fileID: 3124989442495702562, guid: 13318577ebfe98d4fba8488a2c551516, type: 3}
