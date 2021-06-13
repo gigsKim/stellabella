@@ -116,6 +116,7 @@
     <Compile Include="Assets\GIHUNKIM\System\CtrlPlayer.cs" />
     <Compile Include="Assets\GIHUNKIM\System\ExplosionManager.cs" />
     <Compile Include="Assets\GIHUNKIM\System\Player_Bomb.cs" />
+    <Compile Include="Assets\GIHUNKIM\System\Player_charge.cs" />
     <Compile Include="Assets\GIHUNKIM\System\ScoreManager.cs" />
     <Compile Include="Assets\GIHUNKIM\System\ScoreManager_Finish.cs" />
     <Compile Include="Assets\GIHUNKIM\System\Stage_misson.cs" />
@@ -178,7 +179,6 @@
     <Compile Include="Assets\Script\Player\LockPlayer.cs" />
     <Compile Include="Assets\Script\Player\Player_AutoShoot.cs" />
     <Compile Include="Assets\Script\Player\Player_Bullet.cs" />
-    <Compile Include="Assets\Script\Player\Player_charge.cs" />
     <Compile Include="Assets\Script\Player\Player_shoot.cs" />
     <Compile Include="Assets\Script\Player\Player_shootLong.cs" />
     <Compile Include="Assets\Script\Player\Player_status.cs" />

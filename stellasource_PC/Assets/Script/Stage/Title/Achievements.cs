@@ -14,18 +14,21 @@ public class Achievements : MonoBehaviour
         if (temp != "")
         {
             string[] rank = temp.Split(';');
-            for (int i = 0; i < rank.Length; i++)
+
+            if (rank.Length < 16)
             {
-                this.transform.GetChild(0).GetChild(i).GetComponent<Text>().text = rank[i];
+                for (int i = 0; i < rank.Length; i++)
+                {
+                    this.transform.GetChild(0).GetChild(i).GetComponent<Text>().text = rank[i];
+                }
             }
 
-            if(rank.Length >= 16)
+            else if (rank.Length >= 16)
             {
                 for (int i = 0; i < 16; i++)
                 {
                     this.transform.GetChild(0).GetChild(i).GetComponent<Text>().text = rank[i];
                 }
-
             }
         }
     }

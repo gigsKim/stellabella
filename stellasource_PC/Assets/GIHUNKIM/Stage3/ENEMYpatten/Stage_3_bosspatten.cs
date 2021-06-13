@@ -13,7 +13,7 @@ public class Stage_3_bosspatten : MonoBehaviour
     {
         manager = gameObject.GetComponent<Stage_3_pt1_mager>();
     }
-    public GameObject bullet;
+    GameObject bullet;
     public bool updown = false;
 
     void FixedUpdate()
@@ -59,7 +59,7 @@ public class Stage_3_bosspatten : MonoBehaviour
                 bullet = BossBullet.GetBossBullet(this.gameObject);
                 bullet.transform.rotation = this.transform.rotation;
                 bullet.GetComponent<Rigidbody2D>().AddForce(new Vector2(bullet.transform.right.x, bullet.transform.right.y) * 250);
-                //bullet.GetComponent<Rigidbody2D>().AddForce(new Vector2(bullet.transform.right.x, bullet.transform.right.y) * -200);
+                
 
 
 

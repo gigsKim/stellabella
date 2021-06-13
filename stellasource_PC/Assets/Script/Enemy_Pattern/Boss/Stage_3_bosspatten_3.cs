@@ -9,7 +9,7 @@ public class Stage_3_bosspatten_3 : MonoBehaviour
     int bossbullet = 2;
     public float bulletposition = 0;
  
-    public GameObject bullet;
+    GameObject bullet;
     public bool updown = false;
 
     Stage_3_pt1_mager manager;

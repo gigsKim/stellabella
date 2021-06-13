@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/GIHUNKIM/Scene/Stage6.unity
+- path: Assets/GIHUNKIM/Scene/stage3_2.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
